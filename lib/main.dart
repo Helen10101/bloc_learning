@@ -1,12 +1,9 @@
-import 'package:bloc/bloc.dart';
+
+
 import 'package:flutter/widgets.dart';
 
-import 'app.dart';
-import 'counter_observer.dart';
+import 'timer/veiw/app.dart';
 
-void main() {
-  BlocOverrides.runZoned(
-    () => runApp(const CounterApp()),
-    blocObserver: CounterObserver(),
-  );
-}
+
+
+void main() => runApp(App());
